@@ -1,3 +1,5 @@
+/* Estilos para el formulario */
+
 .tabla .logeador {
     background: transparent;
     color:rgb(0, 0, 0);
@@ -120,6 +122,8 @@ a {
     background-color: #555;
 }
 
+/* Estilos del header */
+
 header {
     position: fixed;
     top: 0;
@@ -143,7 +147,13 @@ footer {
 
 .footer-block {
     display:inline-block;
-    vertical-align: top;
-    margin-right: 20px;
+    margin-right: 50px;
 }
+
+.social-icon {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+
 
