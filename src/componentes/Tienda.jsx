@@ -10,12 +10,7 @@ function Tienda() {
   return (
     <div>
       <Menu/>
-      <input
-        type="text"
-        placeholder="Buscar..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
+      <input type="text" placeholder="Buscar..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
       <ResultadosBusqueda searchQuery={searchQuery} />
       <Pie/>
     </div>
