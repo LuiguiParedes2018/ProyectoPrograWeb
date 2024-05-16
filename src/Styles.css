@@ -147,13 +147,20 @@ footer {
 
 .footer-block {
     display:inline-block;
-    margin-right: 50px;
+    margin-right: 80px;
 }
 
 .social-icon {
     margin-right: 20px;
     font-size: 30px;
 }
+
+.footer-block-icon{
+    display:inline-block;
+    margin-right: 50px;
+    transform: translateY(-100%)
+}
+
 
 
 

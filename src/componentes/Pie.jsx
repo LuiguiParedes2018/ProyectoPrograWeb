@@ -38,7 +38,7 @@ const Pie = () => {
             <li><a href="#!">FAQ</a></li>
           </ul>
         </div>
-        <div className="footer-block">
+        <div className="footer-block-icon">
             <a href="https://www.facebook.com/" target="_blank" className='social-icon'><AiOutlineFacebook /></a>
             <a href="https://www.instagram.com/" target="_blank" className='social-icon'><FaInstagram /></a>
             <a href="https://twitter.com/" target="_blank" className='social-icon'><FiTwitter /></a>
