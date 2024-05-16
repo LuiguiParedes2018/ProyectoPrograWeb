@@ -2,27 +2,32 @@
     {
       "nombre": "Toyota",
       "imagen": "ruta/a/la/imagen/toyota.jpg",
-      "precio": 25000
+      "precio": 25000,
+      "cantidadVendida":12
     },
     {
       "nombre": "Ford",
       "imagen": "ruta/a/la/imagen/ford.jpg",
-      "precio": 27000
+      "precio": 27000,
+      "cantidadVendida":7
     },
     {
       "nombre": "Honda",
       "imagen": "ruta/a/la/imagen/honda.jpg",
-      "precio": 24000
+      "precio": 24000,
+      "cantidadVendida":15
     },
     {
       "nombre": "Chevrolet",
       "imagen": "ruta/a/la/imagen/chevrolet.jpg",
-      "precio": 26000
+      "precio": 26000,
+      "cantidadVendida":3
     },
     {
       "nombre": "BMW",
       "imagen": "ruta/a/la/imagen/bmw.jpg",
-      "precio": 30000
+      "precio": 30000,
+      "cantidadVendida":20
     }
 ]
   
