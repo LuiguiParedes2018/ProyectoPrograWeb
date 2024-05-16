@@ -1,20 +1,27 @@
-import '../App.css'
-import Menu from './Menu'
-import Pie from './Pie'
-
+// Tienda.jsx
+import React, { useState } from "react";
+import Menu from './Menu';
+import Pie from './Pie';
+import ResultadosBusqueda from "./ResultadosBusqueda";
 
 function Tienda() {
+  const [searchQuery, setSearchQuery] = useState('');
 
-    return (
-      <>
-        <Menu/>
-        <div>
-            <h1>ES ES LA PARTE PRINCIPAL DE LA PAGINA</h1>
-        </div>
+  return (
+    <div>
+      <Menu/>
+      <input
+        type="text"
+        placeholder="Buscar..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <ResultadosBusqueda searchQuery={searchQuery} />
+      <Pie/>
+    </div>
+  );
+}
 
-        <Pie/>
-      </>
-    )
-  }
-  
-  export default Tienda;
+export default Tienda;
+
+

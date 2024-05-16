@@ -1,0 +1,28 @@
+[
+    {
+      "nombre": "Toyota",
+      "imagen": "ruta/a/la/imagen/toyota.jpg",
+      "precio": 25000
+    },
+    {
+      "nombre": "Ford",
+      "imagen": "ruta/a/la/imagen/ford.jpg",
+      "precio": 27000
+    },
+    {
+      "nombre": "Honda",
+      "imagen": "ruta/a/la/imagen/honda.jpg",
+      "precio": 24000
+    },
+    {
+      "nombre": "Chevrolet",
+      "imagen": "ruta/a/la/imagen/chevrolet.jpg",
+      "precio": 26000
+    },
+    {
+      "nombre": "BMW",
+      "imagen": "ruta/a/la/imagen/bmw.jpg",
+      "precio": 30000
+    }
+]
+  
