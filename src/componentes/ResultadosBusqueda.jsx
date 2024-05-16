@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import productos from './productos.json'; // Asegúrate de que la ruta sea correcta
+
 const ResultadosBusqueda = ({ searchQuery }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [sortType, setSortType] = useState('nombre'); // Orden por defecto por nombre
@@ -44,14 +45,14 @@ const ResultadosBusqueda = ({ searchQuery }) => {
         ))}
       </ul>
       <div className="contenedor-padre">
-        <div className="pagination">
-          <a href="#!">&laquo; Anterior</a>
-          <a href="#!">1</a>
-          <a href="#!">2</a>
-          <a href="#!">3</a>
-          <a href="#!">4</a>
-          <a href="#!">5</a>
-          <a href="#!">Siguiente &raquo;</a>
+        <div className="pagination" style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>« Anterior</a>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>1</a>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>2</a>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>3</a>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>4</a>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>5</a>
+          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>Siguiente »</a>
         </div>
       </div>
     </main>
@@ -59,5 +60,6 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 };
 
 export default ResultadosBusqueda;
+
 
 

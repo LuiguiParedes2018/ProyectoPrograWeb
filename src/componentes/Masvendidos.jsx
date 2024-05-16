@@ -18,7 +18,8 @@ const Masvendidos = () => {
 
   return (
     <>
-      <Menu />
+      <Menu/>
+      <div>
       <main>
         <div>
           <h1>Los 5 productos más vendidos del mes:</h1>
@@ -36,6 +37,7 @@ const Masvendidos = () => {
         </ul>
       </main>
       <Pie />
+      </div>
     </>
   );
 };
