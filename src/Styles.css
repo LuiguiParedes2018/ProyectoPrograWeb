@@ -90,6 +90,8 @@ a {
     color: #000000;
 }
 
+/* Estilos para el menu */
+
 .menu {
   background-color: #c7c3c3;
   padding: 10px;
@@ -127,12 +129,21 @@ header {
     padding: 5px; 
 }
 
+/* Estilos del footer */
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #c7c3c3;
-    color: white; /* Color del texto del footer */
-    padding: 5px; /* Espaciado interno del footer */
+    color: white; 
+    padding: 5px; 
   }
+
+.footer-block {
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
