@@ -6,7 +6,12 @@ function Micuenta() {
     return (
         <>
         <Menu/>
-            <h1>AQUI ESTAN LOS DATOS DE TU CUENTA</h1>
+            <div className='tabla-mi-cuenta'>
+                <h2>Mi cuenta</h2>
+                <p>Ordenes recientes</p>
+                <p>Datos de registro</p>
+                <p>Cambiar password</p>
+            </div>
         <Pie/>
         </>
     )

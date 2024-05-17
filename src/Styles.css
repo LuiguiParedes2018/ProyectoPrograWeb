@@ -207,7 +207,17 @@ footer {
     color: #000000;
 }
 
-
+.tabla-mi-cuenta{
+    background-color: #c7c3c3;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 450px; 
+    transform: translate(-420%, -10%);
+    text-align: left;
+    border: 1px solid #333;
+    border-radius: 5px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 
 
