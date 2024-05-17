@@ -7,18 +7,9 @@ function OrdenesRecientes() {
     return(
         <>
             <Micuenta></Micuenta>
-            <h1>AQUI SE VERAN LAS ORDENES RECIENTES</h1>
+            <h1>EN ESTA PARTE ESTARAN LAS ORDENES RECIENTES</h1>
         </>
     )
 }
 
 export default OrdenesRecientes;
-
-
-
-
-
-
-
-
-
