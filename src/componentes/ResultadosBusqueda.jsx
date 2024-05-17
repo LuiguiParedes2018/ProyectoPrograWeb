@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import productos from './productos.json'; // Asegúrate de que la ruta sea correcta
+import productos from './productos.json'; 
 
 const ResultadosBusqueda = ({ searchQuery }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [sortType, setSortType] = useState('nombre'); // Orden por defecto por nombre
+  const [sortType, setSortType] = useState('nombre'); 
 
   useEffect(() => {
-    const results = productos.filter(product =>
-      product.nombre.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    let results;
+    if (searchQuery === '') {
+      results = productos;
+    } else {
+      results = productos.filter(product =>
+        product.nombre.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
     setFilteredProducts(results);
   }, [searchQuery]);
 
@@ -26,13 +31,6 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 
   return (
     <main>
-      <div>
-        <label htmlFor="sort">Ordenar por: </label>
-        <select id="sort" value={sortType} onChange={(e) => setSortType(e.target.value)}>
-          <option value="nombre">Nombre</option>
-          <option value="precio">Precio</option>
-        </select>
-      </div>
       <ul className="product-list">
         {filteredProducts.map((product, index) => (
           <li key={index}>
@@ -45,14 +43,14 @@ const ResultadosBusqueda = ({ searchQuery }) => {
         ))}
       </ul>
       <div className="contenedor-padre">
-        <div className="pagination" style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>« Anterior</a>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>1</a>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>2</a>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>3</a>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>4</a>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>5</a>
-          <a href="#!" style={{ padding: '10px 15px', backgroundColor: '#f8f9fa', border: '1px solid #dee2e6', color: '#495057', textDecoration: 'none' }}>Siguiente »</a>
+        <div className="pagination">
+          <a href="#!" className="page-link">« Anterior</a>
+          <a href="#!" className="page-link">1</a>
+          <a href="#!" className="page-link">2</a>
+          <a href="#!" className="page-link">3</a>
+          <a href="#!" className="page-link">4</a>
+          <a href="#!" className="page-link">5</a>
+          <a href="#!" className="page-link">Siguiente »</a>
         </div>
       </div>
     </main>
@@ -60,6 +58,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 };
 
 export default ResultadosBusqueda;
+
 
 
 

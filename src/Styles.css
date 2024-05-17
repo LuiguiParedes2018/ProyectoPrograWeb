@@ -171,7 +171,28 @@ footer {
   
   }
   
- 
+ /* Estilos de la paginacion */
+  .contenedor-padre {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .page-link {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    text-decoration: none;
+  }
+  
+  .page-link:hover {
+    background-color: #e9ecef;
+  }
   
   
 
