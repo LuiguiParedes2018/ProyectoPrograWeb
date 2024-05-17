@@ -7,8 +7,7 @@ function CambiarPassword() {
     return(
         <>
             <Micuenta></Micuenta>
-            <p>Esta es la parte para cambiar contraseña</p>
-            <h1>GAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+            <h1>EN ESTA PARTE SE PUEDE CAMBIAR CONTRASEÑA</h1>
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import productos from './productos.json'; 
-import "../Styles.css"
+
 
 const ResultadosBusqueda = ({ searchQuery }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);

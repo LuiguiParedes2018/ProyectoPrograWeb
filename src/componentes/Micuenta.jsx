@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import Menu from './Menu';
 import Pie from './Pie';
+import "../Styles/Micuenta.css"
 
 function Micuenta() {
     return (

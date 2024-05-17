@@ -7,8 +7,7 @@ function DatosRegistro() {
     return(
         <>
             <Micuenta></Micuenta>
-            <p>Esta es la parte de registro </p>
-            <h1>GAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+            <h1>EN ESTA PARTE SE VERAN LOS DATOS DEL USUARIO</h1>
         </>
     )
 }

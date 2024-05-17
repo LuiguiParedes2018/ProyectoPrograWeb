@@ -7,8 +7,7 @@ function OrdenesRecientes() {
     return(
         <>
             <Micuenta></Micuenta>
-            <p>Esta es la parte de ordenes recientes </p>
-            <h1>GAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+            <h1>AQUI SE VERAN LAS ORDENES RECIENTES</h1>
         </>
     )
 }
