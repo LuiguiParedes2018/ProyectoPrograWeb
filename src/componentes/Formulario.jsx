@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import "../Styles.css"
+import "../Styles/Formulario.css"
 
 const Formulario = () => {
     const [ActivarFormulario, setActivarFormulario] = useState("login");

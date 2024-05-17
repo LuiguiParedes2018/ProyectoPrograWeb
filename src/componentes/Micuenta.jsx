@@ -1,15 +1,23 @@
-import '../App.css'
-import Menu from './Menu'
-import Pie from './Pie'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../App.css';
+import Menu from './Menu';
+import Pie from './Pie';
+import "../Styles/Micuenta.css"
 
 function Micuenta() {
     return (
         <>
-        <Menu/>
-            <h1>AQUI ESTAN LOS DATOS DE TU CUENTA</h1>
-        <Pie/>
+            <Menu />
+            <div className='tabla-mi-cuenta'>
+                <h2>Mi cuenta</h2>
+                <p><Link to="/ordenes">Ordenes recientes</Link></p>
+                <p><Link to="/datos-registro">Datos de registro</Link></p>
+                <p><Link to="/cambiar-password">Cambiar password</Link></p>
+            </div>
+            <Pie />
         </>
-    )
+    );
 }
 
-export default Micuenta
+export default Micuenta;

@@ -8,6 +8,9 @@ import Carrito from './componentes/Carrito'
 import Ayuda from "./componentes/Ayuda"
 import Micuenta from "./componentes/Micuenta"
 import Formulario from "./componentes/Formulario"
+import OrdenesRecientes from "./componentes/OrdenesRecientes"
+import DatosRegistro from "./componentes/DatosRegistro"
+import CambiarPassword from "./componentes/CambiarPassword"
 
 function App() {
   return (
@@ -19,9 +22,11 @@ function App() {
         <Route path="/enlace3" element={ <Ofertas /> } />
         <Route path="/enlace4" element={ <Carrito /> } />
         <Route path="/enlace5" element={ <Ayuda /> } />
-        <Route path="/enlace6" element={ <Micuenta /> } />
+        <Route path="/enlace6" element={ <OrdenesRecientes /> } />
         <Route path="/enlace7" element={ <Formulario /> } />
-      
+        <Route path="/ordenes" element={<OrdenesRecientes/>} />
+        <Route path="/datos-registro" element={<DatosRegistro/>} />
+        <Route path="/cambiar-password" element={<CambiarPassword/>} />
       </Routes>
     </div>
   )

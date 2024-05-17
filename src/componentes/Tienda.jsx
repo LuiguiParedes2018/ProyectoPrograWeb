@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Menu from './Menu';
 import Pie from './Pie';
 import ResultadosBusqueda from "./ResultadosBusqueda";
-import "../Styles.css"
+import "../Styles/Tienda.css"
 
 function Tienda() {
   const [inputQuery, setInputQuery] = useState('');

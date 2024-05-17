@@ -1,0 +1,41 @@
+/* Estilos del menu */
+
+.menu {
+  background-color: #c7c3c3;
+  padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+  
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 30px 30px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Estilos del header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c7c3c3;
+    padding: 5px; 
+}
+
