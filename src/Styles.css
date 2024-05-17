@@ -207,6 +207,14 @@ footer {
     color: #000000;
 }
 
+ /* Estilos del carrito */
+#botones{
+    float: right;
+}
+ #valores{
+    float: right;
+    margin-left: 20px;
+ }
 
 
 

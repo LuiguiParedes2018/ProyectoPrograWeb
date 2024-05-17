@@ -24,20 +24,13 @@ function ListaBoton() {
                     <li key={data.id}>
                         <img src={data.imagen} alt={data.nombre}/>
                         <div id='valores'> 
-                        <p>{data.nombre}</p>
+                      
                         <p>Precio: {data.precio}</p>
-     
                         <div id= 'botones'>
-
                         <p><button onClick={() => eliminarProducto(data.id)}>Eliminar</button></p>
-
                         <p><button onClick={() => paraDespues(data)}>Guardar para despues</button></p>
-             
-             
                         </div>
                         </div>
-
-
                     </li>
                 ))}
             </ul>
