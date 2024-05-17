@@ -1,4 +1,8 @@
-/* Estilos para el formulario */
+.tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .tabla .logeador {
     background: transparent;
@@ -28,12 +32,6 @@
     border-radius: 5px;
     border: 2px solid #979797;
     backdrop-filter: blur(5px);
-}
-
-.tabla {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .input-box input {

@@ -10,20 +10,21 @@ function CambiarPassword() {
         <>
             <Micuenta></Micuenta>
             <div className="tabla">
-                <div className="logeador">
-                    <form action="#">
-                    <h2>Cambio de Contraseña</h2>
-                    <div className="input-box">
-                        <label>Ingresa tu contraseña actual</label><br />
-                        <FaLock className="icono"/><input type="password" placeholder="Contraseña Actual" required/>
-                    </div>
-                    <div className="input-box">
-                        <label>Ingresa la nueva contraseña</label><br />
-                        <FaLock className="icono"/><input type="password" placeholder="Nueva Contraseña" required/>
-                    </div>
+                <div className='borde'>
+                    <form action="">
+                        <h2>Cambio de Contraseña</h2>
+                        <div className="input-box">
+                            <FaLock className="icono"/><input type="password" placeholder="Actual" required/>
+                        </div>
+                        <div className="input-box">
+                            <FaLock className="icono"/><input type="password" placeholder="Nueva" required/>
+                        </div>
+                        <div className="input-box">
+                            <FaLock className="icono"/><input type="password" placeholder="Repetir" required/>
+                        </div>
                         <button type="submit">Cambiar Contraseña</button>
-                        </form>
-                    </div>
+                    </form>
+                </div>
             </div>
         </>
     )
