@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaUser, FaLock } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "../Styles/Formulario.css";
-import usuarios from "../assets/usuarios.json"; 
+import usuarios from "../assets/usuarios.json";
 
 const Formulario = () => {
   const [ActivarFormulario, setActivarFormulario] = useState("login");
