@@ -20,14 +20,14 @@ const Tienda = () => {
     return (
         <main>
             <Menu />
-            <div className="input-box">
-                <input className='buscador' 
+            <div className="buscador">
+                <input className='inputbuscador' 
                     type="search" 
                     placeholder="Busca productos por nombre..." 
                     value={searchTerm} 
                     onChange={handleSearch} 
                 />
-                <button onClick={executeSearch}>Buscar</button>
+                <button className='boton-buscador' onClick={executeSearch}>Buscar</button>
             </div>
             <ResultadosBusqueda searchQuery={searchQuery} />
             <Footer /> 
