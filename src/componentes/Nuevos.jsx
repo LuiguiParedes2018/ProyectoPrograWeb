@@ -1,7 +1,7 @@
 
 import Menu from './Menu'
 import Pie from './Pie'
-
+import "../Styles/imagenes.css"
 /***********************************************************************
 FUENTE : https://www.freecodecamp.org/espanol/news/how-to-search-and-filter-components-in-react-como-hacer-una-busqueda-y-filtrado-de-resultados-en-componentes-de-react/
 ***********************************************************************/

@@ -102,8 +102,8 @@
       "cantidadVendida": 19
   },
   {
-      "nombre": "Land Rover",
-      "imagen": "src/assets/imagenes/land-rover.png",
+      "nombre": "Tesla",
+      "imagen": "src/assets/imagenes/tesla.png",
       "precio": 45000,
       "cantidadVendida": 7
   },
@@ -144,8 +144,8 @@
       "cantidadVendida": 9
   },
   {
-      "nombre": "Genesis",
-      "imagen": "src/assets/imagenes/genesis.png",
+      "nombre": "Tesla cybertruck",
+      "imagen": "src/assets/imagenes/tesla-cybertruck.png",
       "precio": 36000,
       "cantidadVendida": 11
   },
@@ -156,8 +156,8 @@
       "cantidadVendida": 5
   },
   {
-      "nombre": "Jaguar",
-      "imagen": "src/assets/imagenes/jaguar.png",
+      "nombre": "Mototaxi",
+      "imagen": "src/assets/imagenes/mototaxi.png",
       "precio": 60000,
       "cantidadVendida": 8
   },
@@ -198,8 +198,8 @@
       "cantidadVendida": 2
   },
   {
-      "nombre": "Pagani",
-      "imagen": "src/assets/imagenes/pagani.png",
+      "nombre": "Formula 1",
+      "imagen": "src/assets/imagenes/formula.png",
       "precio": 300
   }
 ]

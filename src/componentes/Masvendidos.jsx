@@ -2,6 +2,7 @@ import '../App.css';
 import React, { useEffect, useState } from 'react';
 import Menu from './Menu';
 import Pie from './Pie';
+import "../Styles/imagenes.css"
 
 const Masvendidos = () => {
   const [productosMasVendidos, setProductosMasVendidos] = useState([]);
