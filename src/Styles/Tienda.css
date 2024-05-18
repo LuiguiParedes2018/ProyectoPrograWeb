@@ -34,8 +34,12 @@
 }
 
 .input-box{
-    transform: translateY(-540%);
+    transform: translate(10%,250%);
     width: 1300px;
+    position: fixed;
+    left: 0;
+    top: 0; 
+    flex: 1;
 }
 
 button{
