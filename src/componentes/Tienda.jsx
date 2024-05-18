@@ -17,7 +17,7 @@ const Tienda = () => {
 
     return (
         <main>
-            <Menu /> {/* Incluir el componente Menu */}
+            <Menu />
             <div className="search-bar">
                 <input 
                     type="search" 
@@ -28,7 +28,7 @@ const Tienda = () => {
                 <button onClick={executeSearch}>Buscar</button>
             </div>
             <ResultadosBusqueda searchQuery={searchQuery} />
-            <Footer /> {/* Incluir el componente Footer */}
+            <Footer /> 
         </main>
     );
 };

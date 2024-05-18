@@ -1,50 +1,32 @@
-/* Estilos globales */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
-/* Estilos para el header y la barra de búsqueda */
 .search-bar {
-    position: sticky; /* Hace que el elemento sea fijo */
-    top: 60px; /* Ajusta esta medida para que esté justo debajo del header */
-    background-color: #f8f8f8; /* Fondo blanco para la barra de búsqueda */
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Asegura que esté por encima de otros contenidos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una pequeña sombra */
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    transform: translate(0%, 100px);
 }
 
 .search-bar input[type="search"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 300px; /* Ajusta el tamaño del input */
+    width: 80%; 
     margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 .search-bar button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    padding: 8px 8px;
     cursor: pointer;
 }
 
-.search-bar button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos adicionales para otros elementos */
-.main-content {
-    padding: 20px;
-}
-
-/* Asegura que el footer esté en la parte inferior */
 
 
