@@ -1,9 +1,9 @@
+// Tienda.jsx
 import React, { useState } from 'react';
-import Menu from './Menu.jsx'; // Importar el componente Menu
-import Footer from './Pie.jsx'; // Importar el componente Footer
+import Menu from './Menu.jsx';
+import Footer from './Pie.jsx';
 import ResultadosBusqueda from './ResultadosBusqueda';
-import "../Styles/Tienda.css"
-
+import '../Styles/Tienda.css';
 
 const Tienda = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -21,21 +21,25 @@ const Tienda = () => {
         <main>
             <Menu />
             <div className="buscador">
-                <input className='inputbuscador' 
-                    type="search" 
-                    placeholder="Busca productos por nombre..." 
-                    value={searchTerm} 
-                    onChange={handleSearch} 
+                <input
+                    className="inputbuscador"
+                    type="search"
+                    placeholder="Busca productos por nombre..."
+                    value={searchTerm}
+                    onChange={handleSearch}
                 />
-                <button className='boton-buscador' onClick={executeSearch}>Buscar</button>
+                <button className="boton-buscador" onClick={executeSearch}>
+                    Buscar
+                </button>
             </div>
             <ResultadosBusqueda searchQuery={searchQuery} />
-            <Footer /> 
+            <Footer />
         </main>
     );
 };
 
 export default Tienda;
+
 
 
 
