@@ -4,7 +4,7 @@ import Pie from './Pie'
 import Objetos from "../assets/Lista.json";
 import ListaBoton from './ListaBoton'
 import React, { useState } from "react";
-import "../Styles.css"
+
 
 
 function Carrito() {
