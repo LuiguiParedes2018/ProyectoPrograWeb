@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import productos from './productos.json';
-
+import "../Styles/imagenes.css"
 const ResultadosBusqueda = ({ searchQuery }) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [sortType, setSortType] = useState('nombre'); 
@@ -29,7 +29,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
             <ul className="product-list">
                 {filteredProducts.map((product, index) => (
                     <li key={index}>
-                        <img src={product.imagen} alt={product.nombre} />
+                        <img className='dimensiones' src={product.imagen} alt={product.nombre} />
                         <div>
                             <h2>{product.nombre}</h2>
                             <span>${product.precio.toFixed(2)}</span>

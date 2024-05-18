@@ -1,208 +1,205 @@
 [
     {
       "nombre": "Toyota",
-      "imagen": "ruta/a/la/imagen/toyota.jpg",
+      "imagen": "src/assets/imagenes/toyota.png",
       "precio": 25000,
       "cantidadVendida":12
     },
     {
       "nombre": "Ford",
-      "imagen": "ruta/a/la/imagen/ford.jpg",
+      "imagen": "src/assets/imagenes/ford.png",
       "precio": 27000,
       "cantidadVendida":7
     },
     {
       "nombre": "Honda",
-      "imagen": "ruta/a/la/imagen/honda.jpg",
+      "imagen": "src/assets/imagenes/honda.png",
       "precio": 24000,
       "cantidadVendida":15
     },
     {
       "nombre": "Chevrolet",
-      "imagen": "ruta/a/la/imagen/chevrolet.jpg",
+      "imagen": "src/assets/imagenes/chevrolet.png",
       "precio": 26000,
       "cantidadVendida":3
     },
     {
       "nombre": "BMW",
-      "imagen": "ruta/a/la/imagen/bmw.jpg",
+      "imagen": "src/assets/imagenes/bmw.png",
       "precio": 30000,
       "cantidadVendida":20
     },
     {
       "nombre": "Nissan",
-      "imagen": "ruta/a/la/imagen/nissan.jpg",
+      "imagen": "src/assets/imagenes/nissan.png",
       "precio": 23000,
       "cantidadVendida": 10
   },
   {
       "nombre": "Mercedes-Benz",
-      "imagen": "ruta/a/la/imagen/mercedes.jpg",
+      "imagen": "src/assets/imagenes/mercedes-benz.png",
       "precio": 35000,
       "cantidadVendida": 18
   },
   {
       "nombre": "Audi",
-      "imagen": "ruta/a/la/imagen/audi.jpg",
+      "imagen": "src/assets/imagenes/audi.png",
       "precio": 32000,
       "cantidadVendida": 14
   },
   {
       "nombre": "Hyundai",
-      "imagen": "ruta/a/la/imagen/hyundai.jpg",
+      "imagen": "src/assets/imagenes/hyundai.png",
       "precio": 26000,
       "cantidadVendida": 6
   },
   {
       "nombre": "Kia",
-      "imagen": "ruta/a/la/imagen/kia.jpg",
+      "imagen": "src/assets/imagenes/kia.png",
       "precio": 24000,
       "cantidadVendida": 9
   },
   {
       "nombre": "Volvo",
-      "imagen": "ruta/a/la/imagen/volvo.jpg",
+      "imagen": "src/assets/imagenes/volvo.png",
       "precio": 38000,
       "cantidadVendida": 12
   },
   {
       "nombre": "Mazda",
-      "imagen": "ruta/a/la/imagen/mazda.jpg",
+      "imagen": "src/assets/imagenes/mazda.png",
       "precio": 28000,
       "cantidadVendida": 16
   },
   {
       "nombre": "Volkswagen",
-      "imagen": "ruta/a/la/imagen/volkswagen.jpg",
+      "imagen": "src/assets/imagenes/volkswagen.png",
       "precio": 27000,
       "cantidadVendida": 8
   },
   {
       "nombre": "Subaru",
-      "imagen": "ruta/a/la/imagen/subaru.jpg",
+      "imagen": "src/assets/imagenes/subaru.png",
       "precio": 22000,
       "cantidadVendida": 11
   },
   {
       "nombre": "Fiat",
-      "imagen": "ruta/a/la/imagen/fiat.jpg",
+      "imagen": "src/assets/imagenes/fiat.png",
       "precio": 20000,
       "cantidadVendida": 5
   },
   {
       "nombre": "Lexus",
-      "imagen": "ruta/a/la/imagen/lexus.jpg",
+      "imagen": "src/assets/imagenes/lexus.png",
       "precio": 40000,
       "cantidadVendida": 21
   },
   {
       "nombre": "Jeep",
-      "imagen": "ruta/a/la/imagen/jeep.jpg",
+      "imagen": "src/assets/imagenes/jeep.png",
       "precio": 30000,
       "cantidadVendida": 19
   },
   {
       "nombre": "Land Rover",
-      "imagen": "ruta/a/la/imagen/landrover.jpg",
+      "imagen": "src/assets/imagenes/land-rover.png",
       "precio": 45000,
       "cantidadVendida": 7
   },
   {
       "nombre": "Chrysler",
-      "imagen": "ruta/a/la/imagen/chrysler.jpg",
+      "imagen": "src/assets/imagenes/chrysler.png",
       "precio": 29000,
       "cantidadVendida": 13
   },
   {
       "nombre": "Porsche",
-      "imagen": "ruta/a/la/imagen/porsche.jpg",
+      "imagen": "src/assets/imagenes/porsche.png",
       "precio": 50000,
       "cantidadVendida": 22
   },
   {
       "nombre": "Buick",
-      "imagen": "ruta/a/la/imagen/buick.jpg",
+      "imagen": "src/assets/imagenes/buick.png",
       "precio": 32000,
       "cantidadVendida": 10
   },
   {
       "nombre": "Mitsubishi",
-      "imagen": "ruta/a/la/imagen/mitsubishi.jpg",
+      "imagen": "src/assets/imagenes/mitsubishi.png",
       "precio": 25000,
       "cantidadVendida": 15
   },
   {
       "nombre": "Acura",
-      "imagen": "ruta/a/la/imagen/acura.jpg",
+      "imagen": "src/assets/imagenes/acura.png",
       "precio": 33000,
       "cantidadVendida": 17
   },
   {
       "nombre": "Infiniti",
-      "imagen": "ruta/a/la/imagen/infiniti.jpg",
+      "imagen": "src/assets/imagenes/infiniti.png",
       "precio": 34000,
       "cantidadVendida": 9
   },
   {
       "nombre": "Genesis",
-      "imagen": "ruta/a/la/imagen/genesis.jpg",
+      "imagen": "src/assets/imagenes/genesis.png",
       "precio": 36000,
       "cantidadVendida": 11
   },
   {
       "nombre": "Bentley",
-      "imagen": "ruta/a/la/imagen/bentley.jpg",
+      "imagen": "src/assets/imagenes/bentley.png",
       "precio": 70000,
       "cantidadVendida": 5
   },
   {
       "nombre": "Jaguar",
-      "imagen": "ruta/a/la/imagen/jaguar.jpg",
+      "imagen": "src/assets/imagenes/jaguar.png",
       "precio": 60000,
       "cantidadVendida": 8
   },
   {
       "nombre": "Lincoln",
-      "imagen": "ruta/a/la/imagen/lincoln.jpg",
+      "imagen": "src/assets/imagenes/lincoln.png",
       "precio": 48000,
       "cantidadVendida": 14
   },
   {
       "nombre": "Rolls-Royce",
-      "imagen": "ruta/a/la/imagen/rollsroyce.jpg",
+      "imagen": "src/assets/imagenes/rolls-royce.png",
       "precio": 80000,
       "cantidadVendida": 7
   },
   {
       "nombre": "McLaren",
-      "imagen": "ruta/a/la/imagen/mclaren.jpg",
+      "imagen": "src/assets/imagenes/mclaren.png",
       "precio": 90000,
       "cantidadVendida": 4
   },
   {
       "nombre": "Bugatti",
-      "imagen": "ruta/a/la/imagen/bugatti.jpg",
+      "imagen": "src/assets/imagenes/bugatti.png",
       "precio": 1500000,
       "cantidadVendida": 1
   },
   {
       "nombre": "Ferrari",
-      "imagen": "ruta/a/la/imagen/ferrari.jpg",
+      "imagen": "src/assets/imagenes/ferrari.png",
       "precio": 200000,
       "cantidadVendida": 3
   },
   {
       "nombre": "Lamborghini",
-      "imagen": "ruta/a/la/imagen/lamborghini.jpg",
+      "imagen": "src/assets/imagenes/lamborghini.png",
       "precio": 250000,
       "cantidadVendida": 2
   },
   {
       "nombre": "Pagani",
-      "imagen": "ruta/a/la/imagen/pagani.jpg",
-      "precio": 300000,
-      "cantidadVendida": 6
+      "imagen": "src/assets/imagenes/pagani.png",
+      "precio": 300
   }
-    
 ]
-  
