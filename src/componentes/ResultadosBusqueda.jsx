@@ -1,15 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import productos from './productos.json';
 
 const ResultadosBusqueda = ({ searchQuery }) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [sortType, setSortType] = useState('nombre'); 
 
     useEffect(() => {
-        const results = searchQuery ? productos.filter(product =>
-            product.nombre.toLowerCase().includes(searchQuery.toLowerCase())
-        ) : [];
-        setFilteredProducts(results);
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/productos.json?url');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                const results = searchQuery ? data.filter(product =>
+                    product.nombre.toLowerCase().includes(searchQuery.toLowerCase())
+                ) : [];
+                setFilteredProducts(results);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
     }, [searchQuery]);
 
     useEffect(() => {
@@ -53,6 +65,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 };
 
 export default ResultadosBusqueda;
+
 
 
 
