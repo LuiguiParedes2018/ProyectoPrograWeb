@@ -6,7 +6,7 @@ function Menu() {
         <header>
             <div className='menu'>
             <ul>
-                <li><Link to="/">Tienda</Link></li>
+                <li><Link to="/enlace0">Tienda</Link></li>
                 <li><Link to="/enlace1">Mas vendidos</Link></li>
                 <li><Link to="/enlace2">Nuevos</Link></li>
                 <li><Link to="/enlace3">Ofertas</Link></li>
