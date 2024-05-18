@@ -3,6 +3,8 @@ import Menu from './Menu.jsx'; // Importar el componente Menu
 import Footer from './Pie.jsx'; // Importar el componente Footer
 import ResultadosBusqueda from './ResultadosBusqueda';
 import "../Styles/Tienda.css"
+
+
 const Tienda = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
@@ -18,8 +20,8 @@ const Tienda = () => {
     return (
         <main>
             <Menu />
-            <div className="search-bar">
-                <input 
+            <div className="input-box">
+                <input className='buscador' 
                     type="search" 
                     placeholder="Busca productos por nombre..." 
                     value={searchTerm} 
@@ -34,5 +36,6 @@ const Tienda = () => {
 };
 
 export default Tienda;
+
 
 
