@@ -74,7 +74,7 @@ const Formulario = () => {
         </form>
       </div>
       <br />
-      {/* Secciones de registro y recuperación de contraseña no se modifican */}
+      
       <div className={`registrador ${ActivarFormulario === "registro" ? "" : "hidden"}`}>
         <form action="">
           <h2>Registra una nueva cuenta</h2>
