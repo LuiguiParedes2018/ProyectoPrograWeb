@@ -12,7 +12,7 @@ const Masvendidos = () => {
   useEffect(() => {
     const productosFiltrados = productos.filter(product => product.cantidadVendida > 0);
     const productosOrdenados = productosFiltrados.sort((a, b) => b.cantidadVendida - a.cantidadVendida);
-    const productosMasVendidosDelMes = productosOrdenados.slice(0, 12);
+    const productosMasVendidosDelMes = productosOrdenados.slice(0, 5);
     setProductosMasVendidos(productosMasVendidosDelMes);
   }, []);
 
