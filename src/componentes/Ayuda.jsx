@@ -3,7 +3,6 @@ import Menu from './Menu'
 import Pie from './Pie'
 import '../App.css'
 
-
 function Ayuda() {
   return (
     <div>
