@@ -1,11 +1,14 @@
 import Objetos from "../assets/Lista.json";
 import React from "react";
 import { Link } from 'react-router-dom';
+import Menu from './Menu'
+import Pie from './Pie'
 
 function Checkout() {
 
     return (
         <>
+        <Menu/>
         <div id='NumeroItems'>
             <p><h2>Casi Listo! Tu orden no estara completa hasta que revises y presiones el boton "Completar orden" al final de la pagina</h2></p>
         </div>
@@ -59,10 +62,8 @@ function Checkout() {
             <Link to="/PedidoCompleto">
           <button>Completar pedido</button>
             </Link>
-            
         </div> 
-
-       
+        <Pie/>
         </>
     );
     
