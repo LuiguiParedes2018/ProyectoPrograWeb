@@ -42,7 +42,7 @@ const Pie = () => {
             <a href="https://www.facebook.com/" target="_blank" className='social-icon'><AiOutlineFacebook /></a>
             <a href="https://www.instagram.com/" target="_blank" className='social-icon'><FaInstagram /></a>
             <a href="https://twitter.com/" target="_blank" className='social-icon'><FiTwitter /></a>
-            <a href="https://www.youtube.com/" target="_blank" className='social-icon'><AiOutlineYoutube /></a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" className='social-icon'><AiOutlineYoutube /></a>
         </div>
       </div>
     </footer>

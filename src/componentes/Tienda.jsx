@@ -1,31 +1,45 @@
 // Tienda.jsx
-import React, { useState } from "react";
-import Menu from './Menu';
-import Pie from './Pie';
-import ResultadosBusqueda from "./ResultadosBusqueda";
-import "../Styles/Tienda.css"
+import React, { useState } from 'react';
+import Menu from './Menu.jsx';
+import Footer from './Pie.jsx';
+import ResultadosBusqueda from './ResultadosBusqueda';
+import '../Styles/Tienda.css';
 
-function Tienda() {
-  const [inputQuery, setInputQuery] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
+const Tienda = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [searchQuery, setSearchQuery] = useState('');
 
-  const handleSearch = () => {
-    setSearchQuery(inputQuery);
-  }
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value);
+    };
 
-  return (
-    <div className="buscador">
-      <Menu/>
-      <div className="input-box-buscador">
-      <input type="text" placeholder="Buscar productos por nombre.." value={inputQuery} onChange={(e) => setInputQuery(e.target.value)}/>
-      <button onClick={handleSearch}>Buscar</button>
-      </div>
-      <ResultadosBusqueda searchQuery={searchQuery} />
-      <Pie/>
-    </div>
-  );
-}
+    const executeSearch = () => {
+        setSearchQuery(searchTerm);
+    };
+
+    return (
+        <main>
+            <Menu />
+            <div className="buscador">
+                <input
+                    className="inputbuscador"
+                    type="search"
+                    placeholder="Busca productos por nombre..."
+                    value={searchTerm}
+                    onChange={handleSearch}
+                />
+                <button className="boton-buscador" onClick={executeSearch}>
+                    Buscar
+                </button>
+            </div>
+            <ResultadosBusqueda searchQuery={searchQuery} />
+            <Footer />
+        </main>
+    );
+};
 
 export default Tienda;
+
+
 
 

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
 import Tienda from "./componentes/Tienda"
 import Masvendidos from './componentes/Masvendidos'
@@ -34,7 +34,8 @@ function App() {
 
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
