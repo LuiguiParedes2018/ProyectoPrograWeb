@@ -1,4 +1,12 @@
 img {
     max-width: 200px; 
-    max-height: 150px; 
+    max-height: 200px; 
+}
+
+.nuevos{
+    margin-top: 60px;
+}
+
+.masvendidos{
+    margin-top: 60px;
 }

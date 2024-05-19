@@ -27,7 +27,6 @@ function Carrito() {
         <div className='Contenedor'>
             <p>Guardado para despues:</p>
         </div>
-
         <Pie/>
         </>
     )

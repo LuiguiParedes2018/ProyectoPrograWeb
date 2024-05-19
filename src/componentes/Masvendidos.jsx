@@ -30,11 +30,9 @@ const Masvendidos = () => {
   return (
     <>
       <Menu/>
-      <div>
+      <div className='masvendidos'>
         <main>
-          <div>
-            <h1>Los 5 productos más vendidos del mes:</h1>
-          </div>
+        <h2>Los 5 productos más vendidos del mes:</h2>
           <ul className="product-list">
             {productosMasVendidos.map((product, index) => (
               <li key={index}>

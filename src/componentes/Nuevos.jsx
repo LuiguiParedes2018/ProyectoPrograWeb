@@ -28,7 +28,7 @@ function Nuevos() {
     return (
         <>
         <Menu />
-        <div>
+        <div className='nuevos'>
             <h2>Los productos más recientes agregados</h2>
             <ul>
                 {productos.map((producto, index) => (
