@@ -4,8 +4,10 @@ import Pie from './Pie'
 import Objetos from "../assets/Lista.json";
 import ListaBoton from './ListaBoton'
 import React, { useState } from "react";
+import "../Styles.css"
+import Checkout from './Checkout';
 
-
+import { Link } from 'react-router-dom';
 
 function Carrito() {
    
@@ -21,13 +23,15 @@ function Carrito() {
             <ListaBoton/>
             <div id='Total'>
             Total: <br></br>
-            <button>Checkout</button>
+            <Link to="/checkout">
+          <button>Checkout</button>
+            </Link>
          </div>
         </div>
         <div className='Contenedor'>
             <p>Guardado para despues:</p>
         </div>
-        <Pie/>
+
         </>
     )
 }
