@@ -11,7 +11,8 @@ import Formulario from "./componentes/Formulario"
 import OrdenesRecientes from "./componentes/OrdenesRecientes"
 import DatosRegistro from "./componentes/DatosRegistro"
 import CambiarPassword from "./componentes/CambiarPassword"
-
+import Checkout from "./componentes/Checkout"
+import PedidoCompleto from "./componentes/PedidoCompleto"
 function App() {
   return (
     <div className="Aplicacion">
@@ -27,6 +28,10 @@ function App() {
         <Route path="/ordenes" element={<OrdenesRecientes/>} />
         <Route path="/datos-registro" element={<DatosRegistro/>} />
         <Route path="/cambiar-password" element={<CambiarPassword/>} />
+        <Route path="/Checkout" element={<Checkout/>} />
+        <Route path="/PedidoCompleto" element={<PedidoCompleto/>} />
+
+
       </Routes>
     </div>
   )

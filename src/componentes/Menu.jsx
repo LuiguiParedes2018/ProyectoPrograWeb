@@ -14,11 +14,12 @@ function Menu() {
                 <li><Link to="/enlace5">Ayuda</Link></li>
                 <li><Link to="/enlace6">Mi Cuenta</Link></li>
                 <li><Link to="/enlace7">Formulario</Link></li>
+
             </ul>
             </div>
         </header>
     )
-    
+     
 }
 
 
