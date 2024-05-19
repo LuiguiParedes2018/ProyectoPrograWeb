@@ -4,6 +4,7 @@ import Menu from './Menu';
 import Pie from './Pie';
 import "../Styles/imagenes.css"
 
+
 const Masvendidos = () => {
   const [productosMasVendidos, setProductosMasVendidos] = useState([]);
 
@@ -32,18 +33,19 @@ const Masvendidos = () => {
       <Menu/>
       <div className='masvendidos'>
         <main>
-        <h2>Los 5 productos más vendidos del mes:</h2>
-          <ul className="product-list">
+          <h2>Los 5 productos mas vendidos del mes</h2>
+          <div className="product-grid">
             {productosMasVendidos.map((product, index) => (
-              <li key={index}>
+              <div key={index} className="product-item">
                 <img src={product.imagen} alt={product.nombre} />
                 <div>
                   <h2>{product.nombre}</h2>
-                  <span>${product.precio.toFixed(2)}</span>
+                  <span>Precio: ${product.precio.toFixed(2)}</span><br />
+                  <span>Cantidad vendida: {product.cantidadVendida} unidades</span>
                 </div>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </main>
         <Pie />
       </div>
@@ -52,3 +54,5 @@ const Masvendidos = () => {
 };
 
 export default Masvendidos;
+
+

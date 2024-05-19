@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import productos from './productos.json';
 import "../Styles/imagenes.css";
-const ResultadosBusqueda = ({ searchQuery }) => {
+
+const ResultadosBusqueda = ({ searchQuery, setIsSearching }) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [sortType, setSortType] = useState('nombre');
     const navigate = useNavigate(); 
@@ -10,7 +11,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
     useEffect(() => {
         const results = searchQuery ? productos.filter(product =>
             product.nombre.toLowerCase().includes(searchQuery.toLowerCase())
-        ) : [];
+        ) : productos; // Mostrar todos los productos si no hay una búsqueda activa
         setFilteredProducts(results);
     }, [searchQuery]);
 
@@ -33,17 +34,17 @@ const ResultadosBusqueda = ({ searchQuery }) => {
     return (
         <main>
             <div className='productosbuscados'>
-            <ul className="product-list">
-                {filteredProducts.map((product, index) => (
-                    <li key={index} onClick={() => handleProductClick(product)}>
-                        <img className='dimensiones' src={product.imagen} alt={product.nombre} />
-                        <div>
-                            <h2>{product.nombre}</h2>
-                            <span>${product.precio.toFixed(2)}</span>
+                <div className="product-container">
+                    {filteredProducts.map((product, index) => (
+                        <div key={index} className="product-item" onClick={() => handleProductClick(product)}>
+                            <img className='dimensiones' src={product.imagen} alt={product.nombre} />
+                            <div>
+                                <h2>{product.nombre}</h2>
+                                <span>${product.precio.toFixed(2)}</span>
+                            </div>
                         </div>
-                    </li>
-                ))}
-            </ul>
+                    ))}
+                </div>
             </div>
             <div className="contenedor-padre">
                 <div className="pagination">
@@ -61,6 +62,8 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 };
 
 export default ResultadosBusqueda;
+
+
 
 
 

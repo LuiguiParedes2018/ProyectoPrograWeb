@@ -25,7 +25,6 @@ function App() {
         <Route path="/enlace2" element={<Nuevos />} />
         <Route path="/enlace3" element={<Ofertas />} />
         <Route path="/enlace4" element={<Carrito />} />
-        <Route path="/enlace5" element={<Ayuda />} />
         <Route path="/enlace6" element={<OrdenesRecientes />} />
         <Route path="/ordenes" element={<OrdenesRecientes />} />
         <Route path="/datos-registro" element={<DatosRegistro />} />

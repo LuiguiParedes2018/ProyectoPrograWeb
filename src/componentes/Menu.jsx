@@ -11,7 +11,6 @@ function Menu() {
                 <li><Link to="/enlace2">Nuevos</Link></li>
                 <li><Link to="/enlace3">Ofertas</Link></li>
                 <li><Link to="/enlace4">Carrito</Link></li>
-                <li><Link to="/enlace5">Ayuda</Link></li>
                 <li><Link to="/enlace6">Mi Cuenta</Link></li>
             </ul>
             </div>
