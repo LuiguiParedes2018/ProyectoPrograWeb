@@ -1,7 +1,9 @@
+import '../App.css'
+import Pie from './Pie'
+import "../Styles/imagenes.css"
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import Menu from './Menu';
-import Pie from './Pie';
 import "../Styles/imagenes.css";
 import ofertasData from "../assets/ofertas.json"; 
 
@@ -28,7 +30,8 @@ function Ofertas() {
             </div>
             <Pie/>
         </>
-    );
+    )
+    
 }
 
-export default Ofertas;
+export default Ofertas
