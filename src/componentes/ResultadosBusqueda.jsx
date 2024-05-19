@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import productos from './productos.json';
 import "../Styles/imagenes.css";
-
 const ResultadosBusqueda = ({ searchQuery }) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [sortType, setSortType] = useState('nombre');
@@ -33,6 +32,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 
     return (
         <main>
+            <div className='productosbuscados'>
             <ul className="product-list">
                 {filteredProducts.map((product, index) => (
                     <li key={index} onClick={() => handleProductClick(product)}>
@@ -44,6 +44,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
                     </li>
                 ))}
             </ul>
+            </div>
             <div className="contenedor-padre">
                 <div className="pagination">
                     <a href="#!" className="page-link">« Anterior</a>
