@@ -11,6 +11,7 @@ import Formulario from "./componentes/Formulario";
 import OrdenesRecientes from "./componentes/OrdenesRecientes";
 import DatosRegistro from "./componentes/DatosRegistro";
 import CambiarPassword from "./componentes/CambiarPassword";
+import Producto from "./componentes/Producto"; 
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/ordenes" element={<OrdenesRecientes />} />
         <Route path="/datos-registro" element={<DatosRegistro />} />
         <Route path="/cambiar-password" element={<CambiarPassword />} />
+        <Route path="/producto/:nombre" element={<Producto />} /> 
       </Routes>
     </div>
   );

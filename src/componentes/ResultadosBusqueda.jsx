@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import productos from './productos.json';
-import "../Styles/imagenes.css"
+import "../Styles/imagenes.css";
+
 const ResultadosBusqueda = ({ searchQuery }) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
-    const [sortType, setSortType] = useState('nombre'); 
+    const [sortType, setSortType] = useState('nombre');
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const results = searchQuery ? productos.filter(product =>
@@ -24,11 +27,15 @@ const ResultadosBusqueda = ({ searchQuery }) => {
         setFilteredProducts(sortedProducts);
     }, [sortType, filteredProducts]);
 
+    const handleProductClick = (product) => {
+        navigate(`/producto/${product.nombre}`, { state: { product } });
+    };
+
     return (
         <main>
             <ul className="product-list">
                 {filteredProducts.map((product, index) => (
-                    <li key={index}>
+                    <li key={index} onClick={() => handleProductClick(product)}>
                         <img className='dimensiones' src={product.imagen} alt={product.nombre} />
                         <div>
                             <h2>{product.nombre}</h2>
@@ -53,6 +60,7 @@ const ResultadosBusqueda = ({ searchQuery }) => {
 };
 
 export default ResultadosBusqueda;
+
 
 
 
