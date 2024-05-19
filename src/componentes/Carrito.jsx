@@ -6,6 +6,7 @@ import ListaBoton from './ListaBoton'
 import React, { useState } from "react";
 import "../Styles.css"
 import Checkout from './Checkout';
+import "../Styles/Carrito.css"
 
 import { Link } from 'react-router-dom';
 

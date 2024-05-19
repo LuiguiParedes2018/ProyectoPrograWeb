@@ -4,7 +4,7 @@
         "nombre": "Producto 1",
         "precio": 10,
         "cantidad": 0,
-        "imagen":"Imagen2"
+        "imagen":"src/assets/imagenes/lincoln.png"
 
 
     },
@@ -13,7 +13,7 @@
         "nombre": "Producto 2",
         "precio": 20,
         "cantidad": 0,
-        "imagen":"Imagen1"
+        "imagen":"src/assets/imagenes/tesla.png"
 
 
 
@@ -23,7 +23,7 @@
         "nombre": "Producto 3",
         "precio": 15,
         "cantidad": 0,
-        "imagen":"Imagen1"
+        "imagen":"src/assets/imagenes/mazda.png"
         
 
 

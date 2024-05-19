@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import "../Styles/Productos.css"; // Importamos el archivo de estilos
 
-const Producto = ({ agregarAlCarrito }) => {
+const Producto = () => {
     const location = useLocation();
     const { product } = location.state;
     const [cantidad, setCantidad] = useState(1);
 
     const handleAgregarAlCarrito = () => {
         if (product.stock >= cantidad) {
-            agregarAlCarrito({ ...product, cantidad });
             alert(`Se ha añadido ${cantidad} ${product.nombre} al carrito.`);
         } else {
             alert(`No hay suficiente stock de ${product.nombre}.`);
