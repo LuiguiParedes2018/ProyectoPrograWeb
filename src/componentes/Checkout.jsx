@@ -1,10 +1,41 @@
-import Objetos from "../assets/Lista.json";
 import React from "react";
 import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { useNavigate} from "react-router-dom";
+import { useForm } from 'react-hook-form';
+
 import Menu from './Menu'
 import Pie from './Pie'
 
 function Checkout() {
+    const { register, handleSubmit } = useForm();
+    const [statusCode, setStatusCode] = useState(null);
+    const navegar = useNavigate() 
+
+    async function onSubmit(values) {
+        // Aquí puedes usar values para enviar la información
+        await fetch('http://localhost:3080/api/tienda/newPedido',  {
+            method: "POST",
+            body: JSON.stringify(values),
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            }
+          })
+        .then( (res) => {
+          setStatusCode(res.status) 
+          if ( res.status === 201 ) {
+            console.log("********************")
+            navegar('/PedidoCompleto');
+          } else {
+            console.log(statusCode)
+          }
+        })
+        .finally(() => {
+          console.log("ya terminamos")
+        })
+    
+      }
 
     return (
         <>
@@ -15,42 +46,49 @@ function Checkout() {
     
         <div className='Contenedor'>
             <p>Datos de compra:</p>
-        </div>
-        <div class id='Envio'>
-            <p>Direccion de envio:</p>
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Linea 1" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Linea 2" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Distrito" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Ciudad" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Pais" required />
+   
+
         </div>
 
-        <div class id='Pago'>
-            <p>Pago:</p>
-            <label for="idQR">Pago con QR</label>
-            <input type="radio" value="Pago con QR" name="tipo" id="idQR"></input>
-            <label for="idCC">Pago Tarjeta</label>
-            <input type="radio" value="Profesor" name="tipo" id="idCC"></input>
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Linea 1" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Linea 2" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Distrito" required />
-            <input id="idaddress" name="Linea" tabindex="1" placeholder="Ciudad" required />
-        </div> 
-        <div className='Contenedor2'>
-            <p>Metodo de envio:</p>
+        <div class id='Envio'>
+            <p>Direccion de envio:</p>
+            <form onSubmit={handleSubmit(onSubmit)} className="my-form">
+            <label htmlFor="linea_1">Linea 1</label>
+            <input type="text" {...register("linea_1")} />
+            <label htmlFor="linea_2">Linea 2</label>
+            <input type="text" {...register("linea_2")} />
+            <label htmlFor="distrito">Distrito</label>
+            <input type="text" {...register("distrito")} />
+            <label htmlFor="ciudad">Ciudad</label>
+            <input type="text" {...register("ciudad")} />
+            <label htmlFor="pais">Pais</label>
+            <input type="text" {...register("pais")} />
+            <p>Pago: </p>
+            <label htmlFor="idQR">Pago con QR</label>
+            <input type="radio" value="QR" name="tipo_de_pago" id="tipo_de_pago" {...register('tipo_de_pago')} />
+            <label htmlFor="idQR">Pago con Tarjeta</label>
+            <input type="radio" value="Tarjeta de Credito" name="tipo_de_pago" id="tipo_de_pago" {...register('tipo_de_pago')} />
+            <label htmlFor="numero_de_tarjeta">Numero de tarjeta</label>
+            <input type="text" {...register("numero_de_tarjeta")} />
+            <label htmlFor="nombre_en_tarjeta">Nombre en tarjeta</label>
+            <input type="text" {...register("nombre_en_tarjeta")} />
+            <label htmlFor="vencimiento">Vencimiento de tarjeta</label>
+            <input type="text" {...register("vencimiento")} />
+            <label htmlFor="ccv">CCV</label>
+            <input type="text" {...register("ccv")} />
+            <label htmlFor="idQR">Envio Aereo</label>
+            <input type="radio" value="Aereo" name="metodo_de_envio" id="metodo_de_envio" {...register('metodo_de_envio')} />
+            <label htmlFor="idQR">Envio Prioritario</label>
+            <input type="radio" value="Priotitario" name="metodo_de_envio" id="metodo_de_envio" {...register('metodo_de_envio')} />
+            <div class id='Pago'>
+            </div> 
+            <button type="submit">Grabar</button>
+            </form>
+
+ 
+
         </div>
-        <div class id='TipoEnvio'>
-        <label for="idAereo">Economico Aereo - S/.10</label>
-            <input type="radio" value="Aereo" name="tipo" id="idAereo"></input>
-            <label for="idPriori">Envio Prioritario (5 a 10 dias)- S/.17.00</label>
-            <input type="radio" value="Prioritario" name="tipo" id="idPriori"></input>
-        </div>
-        <div className='Contenedor'>
-            <p>Datos de compra:</p>
-        </div>
-            <div id='s'>
-            <p>Items en pedido:</p>
-           </div>
+
 
 
         <div class id='Pago'>
@@ -63,7 +101,6 @@ function Checkout() {
           <button>Completar pedido</button>
             </Link>
         </div> 
-        <Pie/>
         </>
     );
     
