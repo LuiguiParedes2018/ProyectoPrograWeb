@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Toyota",
+        "precio_anterior": 25000,
+        "precio_actual": 22500,
+        "imagen": "src/assets/imagenes/toyota.png"
+    },
+    {
+        "nombre": "Honda",
+        "precio_anterior": 24000,
+        "precio_actual": 21600,
+        "imagen": "src/assets/imagenes/honda.png"
+    },
+    {
+        "nombre": "Nissan",
+        "precio_anterior": 23000,
+        "precio_actual": 20700,
+        "imagen": "src/assets/imagenes/nissan.png"
+    },
+    {
+        "nombre": "Hyundai",
+        "precio_anterior": 26000,
+        "precio_actual": 23400,
+        "imagen": "src/assets/imagenes/hyundai.png"
+    },
+    {
+        "nombre": "Kia",
+        "precio_anterior": 24000,
+        "precio_actual": 21600,
+        "imagen": "src/assets/imagenes/kia.png"
+    }
+]

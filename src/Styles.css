@@ -1,0 +1,217 @@
+/* Estilos para el formulario */
+
+.tabla .logeador {
+    background: transparent;
+    color:rgb(0, 0, 0);
+    width: 350px;
+    padding: 30px 40px;
+    border-radius: 5px;
+    border: 2px solid #979797;
+    backdrop-filter: blur(5px);
+}
+
+.tabla .registrador {
+    background: transparent;
+    color:rgb(0, 0, 0);
+    width: 350px;
+    padding: 30px 40px;
+    border-radius: 5px;
+    border: 2px solid #979797;
+    backdrop-filter: blur(5px);
+}
+
+.tabla .recuperador {
+    background: transparent;
+    color:rgb(0, 0, 0);
+    width: 350px;
+    padding: 30px 40px;
+    border-radius: 5px;
+    border: 2px solid #979797;
+    backdrop-filter: blur(5px);
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box input {
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    border: 2px solid;
+    padding: 10px;
+    border: 2px solid rgb(166, 172, 172);
+    color: #000000; 
+}
+
+.tabla .input-box {
+    position: relative;
+    margin:10px;
+}
+
+.input-box .icono {
+    transform: translate(-20%, 20%);
+    color: rgb(0, 0, 0);
+}
+
+.tabla .recordarme-olvidaste {
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+
+.tabla button {
+    width: 100%;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+}
+
+.input-box input::placeholder {
+    color:rgb(166, 172, 172);
+}
+
+.tabla .acuerdo {
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    color: #000000;
+}
+
+/* Estilos para el menu */
+
+.menu {
+  background-color: #c7c3c3;
+  padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+  
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 30px 30px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Estilos del header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c7c3c3;
+    padding: 5px; 
+}
+
+/* Estilos del footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c7c3c3;
+    color: white; 
+    padding: 5px; 
+  }
+
+.footer-block {
+    display:inline-block;
+    margin-right: 80px;
+}
+
+.social-icon {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.footer-block-icon{
+    display:inline-block;
+    margin-right: 50px;
+    transform: translateY(-100%)
+}
+
+
+/* Estilos del buscador */
+
+.buscador {
+    display: flex;
+    flex-direction: column;
+    height: 70vh; 
+  
+  }
+  
+ /* Estilos de la paginacion */
+
+.contenedor-padre {
+    display: flex;
+    justify-content: center;
+  }
+  
+.pagination {
+    display: flex;
+    gap: 10px;
+  }
+  
+.page-link {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    text-decoration: none;
+  }
+  
+.page-link:hover {
+    background-color: #e9ecef;
+  }
+  
+.input-box-buscador input {
+    width: 1100px;
+    height: 45px; 
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(166, 172, 172);
+    padding: 10px;
+    box-sizing: border-box; 
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+

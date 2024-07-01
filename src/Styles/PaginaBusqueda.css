@@ -1,0 +1,60 @@
+main {
+    flex-grow: 1; 
+    padding: 20px;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-list img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-list div {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list h2, .product-list span {
+    margin: 2px 0;
+}
+.pagination {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+.contenedor-padre { 
+    display: flex;
+    justify-content: flex-end; /* Alinea los hijos (paginacion) hacia el final del contenedor */
+}
+.pagination a {
+    color: black;
+    float: none; /* Centrar los enlaces */
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #666;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

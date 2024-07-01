@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Producto 1",
+        "precio": 10,
+        "cantidad": 0,
+        "imagen":"src/assets/imagenes/lincoln.png"
+
+    },
+    {
+        "id": 2,
+        "nombre": "Producto 2",
+        "precio": 20,
+        "cantidad": 0,
+        "imagen":"src/assets/imagenes/tesla.png"
+
+
+
+    },
+    {
+        "id": 3,
+        "nombre": "Producto 3",
+        "precio": 15,
+        "cantidad": 0,
+        "imagen":"src/assets/imagenes/mazda.png"
+        
+
+
+    }
+]

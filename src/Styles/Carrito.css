@@ -1,0 +1,24 @@
+.Contenedor {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+#Total button {
+    background-color: #1b05c3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
