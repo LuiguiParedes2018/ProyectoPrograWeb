@@ -4,7 +4,7 @@ const fsPromises = require('fs/promises');
 
 const router = express.Router();
 
-// Helper function to read JSON files
+// Funcion para leer JSON
 const leerArchivoJson = async (rutaArchivo) => {
     try {
         const datos = await fsPromises.readFile(rutaArchivo, 'utf-8');
@@ -15,7 +15,7 @@ const leerArchivoJson = async (rutaArchivo) => {
     }
 };
 
-// Search Results Route
+// Ruta de busqueda
 router.get('/', async (req, res) => {
     const terminoBusqueda = req.query.q || '';
     const rutaArchivo = path.join(__dirname, '../../src/assets/productos.json');
