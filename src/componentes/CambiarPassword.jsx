@@ -1,33 +1,39 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
-import Micuenta from './Micuenta';
-import { FaLock } from "react-icons/fa";
-import "../Styles/CambiarPassword.css"
+import React, { useState } from 'react';
+import axios from 'axios';
 
-function CambiarPassword() {
-    return(
-        <>
-            <Micuenta></Micuenta>
-            <div className="tabla">
-                <div className='borde'>
-                    <form action="">
-                        <h2>Cambio de Contraseña</h2>
-                        <div className="input-box">
-                            <FaLock className="icono"/><input type="password" placeholder="Actual" required/>
-                        </div>
-                        <div className="input-box">
-                            <FaLock className="icono"/><input type="password" placeholder="Nueva" required/>
-                        </div>
-                        <div className="input-box">
-                            <FaLock className="icono"/><input type="password" placeholder="Repetir" required/>
-                        </div>
-                        <button type="submit">Cambiar Contraseña</button>
-                    </form>
-                </div>
-            </div>
-        </>
-    )
-}
+const CambiarPassword = () => {
+    const [oldPassword, setOldPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleChangePassword = async () => {
+        try {
+            const response = await axios.put(`/api/usuarios/{userId}/cambiar-password`, { password: newPassword });
+            setMessage('Contraseña actualizada correctamente');
+        } catch (error) {
+            setMessage('Error al actualizar la contraseña');
+        }
+    };
+
+    return (
+        <div>
+            <h2>Cambiar Contraseña</h2>
+            <input
+                type="password"
+                value={oldPassword}
+                onChange={(e) => setOldPassword(e.target.value)}
+                placeholder="Contraseña antigua"
+            />
+            <input
+                type="password"
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="Nueva contraseña"
+            />
+            <button onClick={handleChangePassword}>Cambiar</button>
+            <p>{message}</p>
+        </div>
+    );
+};
 
 export default CambiarPassword;

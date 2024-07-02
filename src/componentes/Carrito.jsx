@@ -1,40 +1,41 @@
-import '../App.css'
-import Menu from './Menu'
-import Pie from './Pie'
-import Objetos from "../assets/Lista.json";
-import ListaBoton from './ListaBoton'
-import React, { useState } from "react";
-import "../Styles.css"
-import Checkout from './Checkout';
-import "../Styles/Carrito.css"
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-import { Link } from 'react-router-dom';
+const Carrito = () => {
+    const [items, setItems] = useState([]);
 
-function Carrito() {
-   
+    useEffect(() => {
+        const fetchItems = async () => {
+            const response = await axios.get('/api/carrito');
+            setItems(response.data);
+        };
+        fetchItems();
+    }, []);
+
+    const handleUpdateQuantity = async (id, cantidad) => {
+        await axios.put(`/api/carrito/${id}`, { cantidad });
+        setItems(items.map(item => (item.id === id ? { ...item, cantidad } : item)));
+    };
+
+    const handleRemoveItem = async (id) => {
+        await axios.delete(`/api/carrito/${id}`);
+        setItems(items.filter(item => item.id !== id));
+    };
+
     return (
-        <>
-        <Menu/>
-        <div id='NumeroItems'>
-        <p><h2>Items en tu carrito de compras</h2></p>
+        <div>
+            <h2>Carrito de Compras</h2>
+            {items.map(item => (
+                <div key={item.id}>
+                    <h3>{item.nombre}</h3>
+                    <p>Cantidad: {item.cantidad}</p>
+                    <button onClick={() => handleUpdateQuantity(item.id, item.cantidad + 1)}>+</button>
+                    <button onClick={() => handleUpdateQuantity(item.id, item.cantidad - 1)}>-</button>
+                    <button onClick={() => handleRemoveItem(item.id)}>Eliminar</button>
+                </div>
+            ))}
         </div>
+    );
+};
 
-        <div className='Contenedor'>
-            <p>Items Disponibles para Envio:</p>
-            <ListaBoton/>
-            <div id='Total'>
-            Total: <br></br>
-            <Link to="/checkout">
-          <button>Checkout</button>
-            </Link>
-         </div>
-        </div>
-        <div className='Contenedor'>
-            <p>Guardado para despues:</p>
-        </div>
-        <Pie/>
-        </>
-    )
-}
-
-export default Carrito
+export default Carrito;
