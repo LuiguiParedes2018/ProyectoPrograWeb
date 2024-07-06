@@ -12,8 +12,10 @@ import OrdenesRecientes from "./componentes/OrdenesRecientes";
 import DatosRegistro from "./componentes/DatosRegistro";
 import CambiarPassword from "./componentes/CambiarPassword";
 import Producto from "./componentes/Producto";
-import Checkout from "./componentes/Checkout"
-import PedidoCompleto from "./componentes/PedidoCompleto"
+import Checkout from "./componentes/Checkout";
+import PedidoCompleto from "./componentes/PedidoCompleto";
+import Dashboard from './Dashboard';
+import Products from './Products';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path="/producto/:nombre" element={<Producto />} /> 
         <Route path="/Checkout" element={<Checkout/>} />
         <Route path="/PedidoCompleto" element={<PedidoCompleto/>} />
+        <Route path="/" exact component={Dashboard} />
+        <Route path="/productos" component={Products} />
       </Routes>
     </div>
   );
